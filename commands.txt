@@ -1,0 +1,56 @@
+// To see the available containers
+docker ps -a
+
+// Stop running container
+docker stop wms-backend
+
+// Remove Container
+docker rm wms-backend
+
+// To see the available images in the system
+docker images -a
+
+// Remove image
+docker rmi wms-backend:${version}
+docker image rm ${image id}
+
+// To build image
+docker build ../workflow-ms -t wms-backend:${version}
+
+// Run image
+docker run --name wms-backend -p 2000:2000/tcp -d wms-backend:1.0.1
+
+// See logs of the container
+docker logs -f wms-backend
+
+// Removes all dangling containers and images
+docker system prune
+
+// Remove all containers forcefully
+docker container rm -f $(docker container ps -aq)
+
+// Remove all images
+docker image rm -f $(docker image ls -aq)
+
+Deploying Node App
+-------------------
+sudo yum update -y
+sudo yum install git -y
+git clone https://vishnu23:vishnu66@gitlab.com/hbl-wms/workflow-ms.git
+copy env file contents
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+. ~/.nvm/nvm.sh
+nvm install 16
+npm i
+npm install pm2 -g
+execute services_start.sh shell script
+
+Deploying Docker Image
+-----------------------
+sudo yum install docker -y
+sudo service docker start
+sudo docker --version
+sudo docker info
+
+// Install Docker Compose in AWS Linux
+https://acloudxpert.com/how-to-install-docker-compose-on-amazon-linux-ami/

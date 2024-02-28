@@ -1,0 +1,1 @@
+scp -r -i ./sample/0-instance.pem ec2-user@ec2-43-204-73-40.ap-south-1.compute.amazonaws.com:/home/ec2-user/runtailor/app-data/logs ./sample

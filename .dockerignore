@@ -1,0 +1,7 @@
+node_modules
+scripts
+.eslintignore
+.eslintrc.json
+.prettierignore
+.prettierrc.json
+commands.txt

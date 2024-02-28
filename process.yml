@@ -1,0 +1,11 @@
+apps:
+    - script: ./gateway/server.js
+      name: 'RT-Express-Gateway'
+    - script: ./services/GeneralService.js
+      name: 'RT-General-Service'
+    - script: ./services/UserService.js
+      name: 'RT-User-Service'
+    - script: ./services/AdminService.js
+      name: 'RT-Admin-Service'
+    - script: ./services/OrderService.js
+      name: 'RT-Order-Service'

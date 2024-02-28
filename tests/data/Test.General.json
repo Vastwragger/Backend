@@ -1,0 +1,15 @@
+{
+	"loginCredentials": {
+		"mobile": "7780268275",
+		"password": "vishnu66"
+	},
+	"otpVerification": {
+		"mobile": "9876543210",
+		"otp": "123456"
+	},
+	"notification": {
+		"title": "Message Title",
+		"type": "GENERAL",
+		"message": "Hey there!, we are happy to anounce that we are extending our services to XXXX area as well"
+	}
+}

@@ -1,0 +1,1 @@
+mongodump --uri mongodb+srv://tech:K6HyN44VhHUF3ChZ@staging.fhxjtgt.mongodb.net/run-tailor --out ./sample/db-dump

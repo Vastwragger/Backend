@@ -1,0 +1,28 @@
+{
+	"fixedDiscount": {
+		"name": "Coupon 1",
+		"code": "ABVC12",
+		"is_fixed_discount": true,
+		"amount": 100,
+		"min_order_amount": 500,
+		"applicable_items": [],
+		"start_date": 1683689587000,
+		"end_date": 1683862387000,
+		"max_usage": 3
+	},
+	"percentageDiscount": {
+		"name": "Coupon 1",
+		"code": "PERC10",
+		"is_fixed_discount": false,
+		"percentage": 10,
+		"max_discount": 150,
+		"applicable_items": [],
+		"start_date": 1683689587000,
+		"end_date": 1683862387000,
+		"max_usage": 3
+	},
+	"category": {
+		"name": "Men 211",
+		"type": "STITCH"
+	}
+}

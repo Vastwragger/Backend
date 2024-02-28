@@ -1,0 +1,44 @@
+const Path = require('path');
+var Global = process.env.ENVIRONMENT
+	? process.env
+	: require('dotenv').config({
+			path: Path.join(__dirname, '/.env-local'),
+	  }).parsed;
+
+const env = Global?.ENVIRONMENT?.toLowerCase() ?? 'dev';
+
+const Local = require('dotenv').config({
+	path: Path.join(__dirname, `./.env-${env}`),
+}).parsed;
+
+module.exports = {
+	DATABASE_URL: Local.DATABASE_URL,
+	JWT_SECRET: Local.JWT_SECRET,
+	DEFAULT_LOCALE: Local.DEFAULT_LOCALE,
+
+	GOOGLE_MAPS_API_KEY: Local.GOOGLE_MAPS_API_KEY,
+	TOKEN_EXPIRY: Local.TOKEN_EXPIRY,
+
+	INSTAMOJO_BASE_URL: Local.INSTAMOJO_BASE_URL,
+	INSTAMOJO_CLIENT_ID: Local.INSTAMOJO_CLIENT_ID,
+	INSTAMOJO_CLIENT_SECRET: Local.INSTAMOJO_CLIENT_SECRET,
+
+	AWS_REGION: Local.AWS_REGION,
+	AWS_ACCESS_KEY_ID: Local.AWS_ACCESS_KEY_ID,
+	AWS_SECRET_ACCESS_KEY: Local.AWS_SECRET_ACCESS_KEY,
+	AWS_BUCKET_NAME: Local.AWS_BUCKET_NAME,
+
+	ENV: Global.ENVIRONMENT,
+	FRONTEND_USER_URL: Global.FRONTEND_USER_URL,
+	BACKEND_BASE_URL: Global.BACKEND_BASE_URL,
+
+	PORT_GATEWAY: Global.API_PORT,
+	PORT_GATEWAY_ADMIN: Local.PORT_GATEWAY_ADMIN,
+	PORT_GENERAL: Local.PORT_GENERAL,
+	PORT_USER: Local.PORT_USER,
+	PORT_ADMIN: Local.PORT_ADMIN,
+	PORT_ORDER: Local.PORT_ORDER,
+	SMS_API_KEY: Local.SMS_API_KEY,
+	SMS_SENDER_ID: Local.SMS_SENDER_ID,
+	SMS_OTP_TEMPLATE_ID: Local.SMS_OTP_TEMPLATE_ID,
+};

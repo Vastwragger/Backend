@@ -1,0 +1,121 @@
+http:
+    port: ${PORT_GATEWAY}
+admin:
+    port: ${PORT_GATEWAY_ADMIN}
+    host: localhost
+apiEndpoints:
+    userAPI:
+        host: '*'
+        paths: ['/api/user', '/api/user/*']
+    adminAPI:
+        host: '*'
+        paths: ['/api/admin', '/api/admin/*']
+    orderAPI:
+        host: '*'
+        paths: ['/api/order', '/api/order/*']
+    generalAPI:
+        host: '*'
+        paths: ['/api', '/api/*']
+serviceEndpoints:
+    generalService:
+        url: 'http://localhost:${PORT_GENERAL}/'
+    userService:
+        url: 'http://localhost:${PORT_USER}/'
+    adminService:
+        url: 'http://localhost:${PORT_ADMIN}/'
+    orderService:
+        url: 'http://localhost:${PORT_ORDER}/'
+policies:
+    - basic-auth
+    - cors
+    - expression
+    - key-auth
+    - log
+    - oauth2
+    - proxy
+    - rate-limit
+pipelines:
+    orderPipeline:
+        apiEndpoints:
+            - orderAPI
+        policies:
+            - cors:
+                  - action:
+                        origin: '*'
+                        methods: 'HEAD,PUT,PATCH,POST,DELETE,GET,OPTIONS'
+                        allowedHeaders:
+                            [
+                                'Content-Type',
+                                'Origin',
+                                'Authorization',
+                                'Access-Control-Allow-Origin',
+                                'Access-Control-Allow-Headers',
+                                'Accept',
+                            ]
+            - proxy:
+                  - action:
+                        serviceEndpoint: orderService
+                        changeOrigin: true
+    adminPipeline:
+        apiEndpoints:
+            - adminAPI
+        policies:
+            - cors:
+                  - action:
+                        origin: '*'
+                        methods: 'HEAD,PUT,PATCH,POST,DELETE,GET,OPTIONS'
+                        allowedHeaders:
+                            [
+                                'Content-Type',
+                                'Origin',
+                                'Authorization',
+                                'Access-Control-Allow-Origin',
+                                'Access-Control-Allow-Headers',
+                                'Accept',
+                            ]
+            - proxy:
+                  - action:
+                        serviceEndpoint: adminService
+                        changeOrigin: true
+    userPipeline:
+        apiEndpoints:
+            - userAPI
+        policies:
+            - cors:
+                  - action:
+                        origin: '*'
+                        methods: 'HEAD,PUT,PATCH,POST,DELETE,GET,OPTIONS'
+                        allowedHeaders:
+                            [
+                                'Content-Type',
+                                'Origin',
+                                'Authorization',
+                                'Access-Control-Allow-Origin',
+                                'Access-Control-Allow-Headers',
+                                'Accept',
+                            ]
+            - proxy:
+                  - action:
+                        serviceEndpoint: userService
+                        changeOrigin: true
+    generalPipeline:
+        apiEndpoints:
+            - generalAPI
+        policies:
+            - cors:
+                  - action:
+                        origin: '*'
+                        methods: 'HEAD,PUT,PATCH,POST,DELETE,GET,OPTIONS'
+                        allowedHeaders:
+                            [
+                                'Content-Type',
+                                'Origin',
+                                'Authorization',
+                                'Access-Control-Allow-Origin',
+                                'Access-Control-Allow-Headers',
+                                'Accept',
+                            ]
+            - proxy:
+                  - action:
+                        serviceEndpoint: generalService
+                        changeOrigin: true

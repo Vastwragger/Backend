@@ -1,0 +1,51 @@
+[
+	{
+		"_id": "64627681d77fe7cb77e16e7d",
+		"name": "Men",
+		"type": "STITCH",
+		"image": "https://run-tailor-bucket.s3.amazonaws.com/645a62ead85d5f53d76864ee-1684260071242.webp"
+	},
+	{
+		"_id": "64627685d77fe7cb77e16e80",
+		"name": "Women",
+		"type": "STITCH",
+		"image": "https://run-tailor-bucket.s3.amazonaws.com/645a62ead85d5f53d76864ee-1684260207213.webp"
+	},
+	{
+		"_id": "6462768ad77fe7cb77e16e83",
+		"name": "Kids",
+		"type": "STITCH",
+		"image": "https://run-tailor-bucket.s3.amazonaws.com/645a62ead85d5f53d76864ee-1684260294038.webp"
+	},
+	{
+		"_id": "646276a1d77fe7cb77e16e86",
+		"name": "Others",
+		"type": "STITCH",
+		"image": "https://run-tailor-bucket.s3.amazonaws.com/645a62ead85d5f53d76864ee-1684260071242.webp",
+		"is_active": false
+	},
+	{
+		"_id": "646276acd77fe7cb77e16e89",
+		"name": "Others",
+		"type": "ALTER",
+		"image": "https://run-tailor-bucket.s3.amazonaws.com/645a62ead85d5f53d76864ee-1684260071242.webp"
+	},
+	{
+		"_id": "646276afd77fe7cb77e16e8c",
+		"name": "Kids",
+		"type": "ALTER",
+		"image": "https://run-tailor-bucket.s3.amazonaws.com/645a62ead85d5f53d76864ee-1684260302009.webp"
+	},
+	{
+		"_id": "646276b4d77fe7cb77e16e8f",
+		"name": "Men",
+		"type": "ALTER",
+		"image": "https://run-tailor-bucket.s3.amazonaws.com/645a62ead85d5f53d76864ee-1684260113498.webp"
+	},
+	{
+		"_id": "646276b8d77fe7cb77e16e92",
+		"name": "Women",
+		"type": "ALTER",
+		"image": "https://run-tailor-bucket.s3.amazonaws.com/645a62ead85d5f53d76864ee-1684260215981.webp"
+	}
+]

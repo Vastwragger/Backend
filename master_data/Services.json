@@ -1,0 +1,310 @@
+[
+	{
+		"_id": "6419d2abb4b972e9e1412e42",
+		"name": "Taper Full Legs Knee Up/Down",
+		"description": "Taper Full Legs Knee Up  Down",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/ebf784cb-08fa-4692-9a3f-c7d42f99ba06-Taper%20Full%20Legs%20Knee%20Up%20%20Down.png",
+		"price": 180
+	},
+	{
+		"_id": "6419d2abb4b972e9e1412e46",
+		"name": "Take In/Out Waist",
+		"description": "take in Out Waist",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/d220e8e6-ae03-46b9-bed8-d792c354ef17-take%20in%20Out%20Waist.png",
+		"price": 150
+	},
+	{
+		"_id": "6419d2abb4b972e9e1412e49",
+		"name": "Waist in/out through the sides",
+		"description": "waist in from sides",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/f0be1f70-2cdd-4ebe-ae7d-a8e2f8858afe-waist%20in%20from%20sides.png",
+		"price": 180
+	},
+	{
+		"_id": "6419d2abb4b972e9e1412e4c",
+		"name": "Extra wide trouser",
+		"description": "Extra wide trouser",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/4f76766a-e1cb-4ad4-a584-4ffc940d9936-Extra%20wide%20trouser.png",
+		"price": 180
+	},
+	{
+		"_id": "6419d2abb4b972e9e1412e4f",
+		"name": "Waist in and taper full legs ",
+		"description": "waist in and taper full legs ",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/06960013-dbcb-4ec5-8398-e737f7a37839-waist%20in%20and%20taper%20full%20legs%20.png",
+		"price": 180
+	},
+	{
+		"_id": "6419d2abb4b972e9e1412e52",
+		"name": "Shorten Trouser",
+		"description": "Shorten Trouser",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/303096d6-fa77-49a8-b854-a768c483b07e-Shorten%20Trouser.png",
+		"price": 120
+	},
+	{
+		"_id": "6419d2abb4b972e9e1412e55",
+		"name": "Wide Trouser",
+		"description": "Wide Trouser",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/7784bcbf-3e36-4d84-85a2-9cd3282badfb-Wide%20Trouser.png",
+		"price": 150
+	},
+	{
+		"_id": "6419cebeb4b972e9e1412d5d",
+		"name": "Taper Sleeves",
+		"description": "Taper Sleeves",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/0f3c434a-cbb7-4bf4-bd8b-621509f2c746-Taper%20Sleeves.png",
+		"price": 150
+	},
+	{
+		"_id": "6419cebeb4b972e9e1412d60",
+		"name": "Raise Shoulder",
+		"description": "Raise Shoulder",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/c9091603-4c49-4a09-8ac5-61ff1966a425-Raise%20Shoulder.png",
+		"price": 180
+	},
+	{
+		"_id": "6419cebeb4b972e9e1412d63",
+		"name": "Shorten or lengthen",
+		"description": "Shorten or lengthen",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/894e8359-1496-4a14-a8f7-54b4bd3f50cb-Shorten%20or%20lengthen%20.png",
+		"price": 150
+	},
+	{
+		"_id": "6419cebeb4b972e9e1412d66",
+		"name": "Side in/out",
+		"description": "Side IN or OUT",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/68e04963-0c98-488f-851c-22cd4edba43b-Side%20IN%20or%20OUT.png",
+		"price": 120
+	},
+	{
+		"_id": "6419cebeb4b972e9e1412d69",
+		"name": "Shorten Sleeves from Bottom",
+		"description": "Shorten  Sleeves Bottom",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/77b5f094-869e-4258-b677-55690db8b40c-Shorten%20%20Sleeves%20Bottom.png",
+		"price": 150
+	},
+	{
+		"_id": "6419cebeb4b972e9e1412d6c",
+		"name": "Shorten Sleeves from Top",
+		"description": "Shorten Sleeves from top",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/a5e71d44-b90b-4903-8f4f-589c5c9e7e65-Shorten%20Sleeves%20from%20top.png",
+		"price": 150
+	},
+	{
+		"_id": "6419d13fb4b972e9e1412dd6",
+		"name": "Crotch in",
+		"description": "Crotch in",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/425c031d-a1d1-4c75-aa36-8a97e03fde81-Crotch%20in.png",
+		"price": 200
+	},
+	{
+		"_id": "6419d13fb4b972e9e1412ddc",
+		"name": "Shorten Wide Jeans",
+		"description": "Shorten Wide Jeans",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/445722b2-3fa4-4449-a8ed-de1d2abf6975-Shorten%20Wide%20Jeans.png",
+		"price": 180
+	},
+	{
+		"_id": "6419d13fb4b972e9e1412ddf",
+		"name": "Waist in and Taper full legs",
+		"description": "Waist in and Taper full legs",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/fd69388e-2c37-4287-a64f-889b1bcb827e-Waist%20in%20and%20Taper%20full%20legs.png",
+		"price": 250
+	},
+	{
+		"_id": "6419d13fb4b972e9e1412dd9",
+		"name": "Taper Full Legs Knee Up/Down",
+		"description": "Taper Full Knee Down",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/780ab256-ba97-4dbf-ada8-3e3e82e8f4f0-Taper%20Full%20Knee%20Down.png",
+		"price": 250
+	},
+	{
+		"_id": "6419d13fb4b972e9e1412de2",
+		"name": "Shorten Jeans",
+		"description": "Shorten Jeans",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/d62653cd-bbc5-463a-b5f5-071b86ea1157-Shorten%20Jeans.png",
+		"price": 150
+	},
+	{
+		"_id": "6419d140b4b972e9e1412de7",
+		"name": "Shorten/Widen Jeans With Original Hem",
+		"description": "Wide Jeans With Og Hem",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/0850743e-1045-4d97-883b-928199203372-Wide%20Jeans%20With%20Og%20Hem.png",
+		"price": 180
+	},
+	{
+		"_id": "6419d140b4b972e9e1412dea",
+		"name": "Waist in/out",
+		"description": "Waist in out",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/8eeef3bc-054b-4d75-9d14-0499b4163ec8-Waist%20in%20out.png",
+		"price": 200
+	},
+	{
+		"_id": "6419d140b4b972e9e1412ded",
+		"name": "Taper full legs",
+		"description": "Taper full legs",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/b9801b46-b540-4ab7-b539-ebbbaba0706f-Taper%20full%20legs.png",
+		"price": 200
+	},
+	{
+		"_id": "6419cfd6b4b972e9e1412da9",
+		"name": "Raise Shoulder",
+		"description": "Raise Shoulder",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/13822ff2-fc0c-484d-a75d-c572abd2051a-Raise%20Shoulder.png",
+		"price": 120
+	},
+	{
+		"_id": "6419cfd6b4b972e9e1412dac",
+		"name": "Reshape Neckline/Armhole",
+		"description": "Reshape Neckline Armhole",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/6b19d89e-39d1-49f7-b514-d5a3026ea2ad-Reshape%20Neckline%20Armhole.png",
+		"price": 200
+	},
+	{
+		"_id": "6419cfd6b4b972e9e1412daf",
+		"name": "Side In/Out",
+		"description": "Side In And Out",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/c1cf0e50-84c1-480f-aa61-516afaf034be-Side%20In%20And%20Out.png",
+		"price": 150
+	},
+	{
+		"_id": "6419cfd6b4b972e9e1412db2",
+		"name": "Shorten or lengthen ",
+		"description": "Shorten or lengthen ",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/297c73a5-ca1f-42b6-ae01-5af9efa40a64-Shorten%20or%20lengthen%20.png",
+		"price": 150
+	},
+	{
+		"_id": "6419c21ab4b972e9e1412ce8",
+		"name": "Shorten sleeves from bottom",
+		"description": "Shorten Sleeves from bottom",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/10142cc0-3e96-4384-9978-bf6473a3e651-Shorten%20Sleeves%20from%20bottom.png",
+		"price": 120
+	},
+	{
+		"_id": "6419c21ab4b972e9e1412ceb",
+		"name": "Shorten shoulder",
+		"description": "shorten shoulder",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/40cd9f67-8a89-4c67-9b41-8398962a4cfe-shorten%20shoulder.png",
+		"price": 200
+	},
+	{
+		"_id": "6419c21ab4b972e9e1412cf0",
+		"name": "Side bLade in/out ",
+		"description": "Side BLade in or out ",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/bac6b6e3-da96-4a4c-b14d-229d89ae8573-Side%20BLade%20in%20or%20out%20.png",
+		"price": 150
+	},
+	{
+		"_id": "6419c21ab4b972e9e1412cf3",
+		"name": "Shorten/lengthen jacket",
+		"description": "Shorten or Lengthen jacket",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/a828a6b0-d594-4aee-9043-841e9ea21805-Shorten%20or%20Lengthen%20jacket.png",
+		"price": 150
+	},
+	{
+		"_id": "6419c21ab4b972e9e1412cf6",
+		"name": "Center seam in/out",
+		"description": "Center Seam In out",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/e57055b7-c7e2-41ce-870f-acbd19b1a907-Center%20Seam%20In%20out.png",
+		"price": 150
+	},
+	{
+		"_id": "6419c21ab4b972e9e1412cf9",
+		"name": "Shorten sleeves from top",
+		"description": "Shorten Sleeves from top",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/2ea66919-7015-4152-b7db-faa661dac937-Shorten%20Sleeves%20from%20top.png",
+		"price": 120
+	},
+	{
+		"_id": "6419c21ab4b972e9e1412cfc",
+		"name": "Taper Sleeeves In/out",
+		"description": "Taper Sleeeves In",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/7e5aab05-6ecc-42cb-9eeb-767444a5881d-Taper%20Sleeeves%20In.png",
+		"price": 120
+	},
+	{
+		"_id": "6419c21ab4b972e9e1412cff",
+		"name": "Side in/out",
+		"description": "Side in out",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/77bb356a-bd4f-4955-a669-56fef7ca94a0-Side%20in%20out1.png",
+		"price": 150
+	},
+	{
+		"_id": "6419d1ffb4b972e9e1412e0d",
+		"name": "Shorten/Lengthen Jacket",
+		"description": "Shorten lengthen",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/1cb739d1-082e-4753-afc5-f5165a606bff-Shorten%20lengthen.png",
+		"price": 200
+	},
+	{
+		"_id": "6419d1ffb4b972e9e1412e10",
+		"name": "Shorten/Lengthen Sleeves from Bottom",
+		"description": "Shorten Lengthen Sleeves from Bottom",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/28fdbb71-750a-4eb3-8f0b-81eedcf0ec4e-Shorten%20Lengthen%20Sleeves%20from%20Bottom.png",
+		"price": 200
+	},
+	{
+		"_id": "6419d1ffb4b972e9e1412e13",
+		"name": "Shorten or raise Shoulder",
+		"description": "Shorten or raise Shoulder",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/15fcfdeb-7776-428b-9abc-7d2708bf989c-Shorten%20or%20raise%20Shoulder.png",
+		"price": 180
+	},
+	{
+		"_id": "6419d1ffb4b972e9e1412e16",
+		"name": "Center Seam In/Out",
+		"description": "Center Seam In Out",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/f25c2a23-ed31-456a-962b-634924b9c504-Center%20Seam%20In%20Out.png",
+		"price": 200
+	},
+	{
+		"_id": "6419d1ffb4b972e9e1412e1a",
+		"name": "Shorten Sleeves From top",
+		"description": "Shorten Sleeves From top",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/e22df70e-f402-488c-bd36-513a35e0ba4e-Shorten%20Sleeves%20From%20top.png",
+		"price": 200
+	},
+	{
+		"_id": "6419d1ffb4b972e9e1412e1d",
+		"name": "Side in/out",
+		"description": "Side in And out",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/87681569-08ca-4907-b061-c8f2ffcc746b-Side%20in%20And%20out.png",
+		"price": 250
+	},
+	{
+		"_id": "6419d200b4b972e9e1412e20",
+		"name": "Taper Sleeves in out",
+		"description": "Taper Sleeves in out",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/7cb9ec41-40b2-4d05-96d8-1d66a63e5904-Taper%20Sleeves%20in%20out.png",
+		"price": 300
+	},
+	{
+		"_id": "6419cf4db4b972e9e1412d86",
+		"name": "Waist in/out",
+		"description": "Waist in out",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/8a734a11-dddb-41b7-9d6d-c3573df09f78-Waist%20in%20out.png",
+		"price": 200
+	},
+	{
+		"_id": "6419cf4db4b972e9e1412d89",
+		"name": "Shorten Wide skirt 1-3 layers",
+		"description": "Shorten Wide skirt 1-3 layers",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/4e433bd6-6120-4b7c-9c19-852e98b40f83-Shorten%20Wide%20skirt%201-3%20layers.png",
+		"price": 600
+	},
+	{
+		"_id": "6419cf4db4b972e9e1412d8c",
+		"name": "Sides in/out",
+		"description": "Side in or out",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/42b72622-6397-43cf-8cee-4dba761fa901-Side%20in%20or%20out.png",
+		"price": 200
+	},
+	{
+		"_id": "6419cf4db4b972e9e1412d8f",
+		"name": "Shorten Skirt",
+		"description": "Shorten Skirt",
+		"image": "https://run-tailor-bucket.s3.ap-south-1.amazonaws.com/e8d009a0-e238-4d93-bc36-714dee66e61f-Shorten%20Skirt.png",
+		"price": 300
+	}
+]
