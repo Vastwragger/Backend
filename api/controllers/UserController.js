@@ -24,8 +24,8 @@ module.exports = {
 	},
 
 	addUser: async (req, res) => {
-		const { first_name, last_name, mobile, role } = req.body;
-		if (!first_name || !last_name || !mobile || !role) {
+		const { name, email, mobile, password,role } = req.body;
+		if (!name || !email || !mobile || !password) {
 			return sendErrorResponse(res, res.__('params_missing'));
 		}
 		if (!Object.values(Constants.ROLES).includes(role)) {
@@ -36,12 +36,12 @@ module.exports = {
 			return sendErrorResponse(res, res.__('mobile_already_in_use'));
 		}
 		let record = {
-			first_name,
-			last_name,
+			name,
+			email,
 			country_code: '+91',
 			mobile,
 			role,
-			password: Helper.getHashedPassword('123456'),
+			password: Helper.getHashedPassword(password),
 		};
 		let result = await Users(record).save();
 		result = result.toObject();
@@ -75,25 +75,40 @@ module.exports = {
 
 	updateProfile: async (req, res) => {
 		const user_details = req.decoded_data;
-		const { first_name, last_name, email } = req.body;
-		if (!first_name || !last_name) {
+		const { name, email, password } = req.body;
+		if (!name || !email) {
 			return sendErrorResponse(res, res.__('params_missing'));
 		}
-		let user = await Users.findById(user_details.user_id, 'first_name image').lean();
+		// let user = await Users.findById(user_details.user_id, 'first_name image').lean();
 		const details = {
-			first_name,
-			last_name,
+			name,
+			email,
 		};
-		if (email) details.email = email;
-		let files = req.files;
-		if (files && files.image) {
-			let file = files.image;
-			let title = `${user_details.user_id}-${Date.now()}${file.name.substring(file.name.lastIndexOf('.'))}`;
-			let response = await StorageUtil.uploadImage(title, file.data, file.mimetype);
-			details.image = response.Location;
-			if (user.image) await StorageUtil.deleteImage(user.image);
-		}
+		password && (details.password = Helper.getHashedPassword(password));
+		// let files = req.files;
+		// if (files && files.image) {
+		// 	let file = files.image;
+		// 	let title = `${user_details.user_id}-${Date.now()}${file.name.substring(file.name.lastIndexOf('.'))}`;
+		// 	let response = await StorageUtil.uploadImage(title, file.data, file.mimetype);
+		// 	details.image = response.Location;
+		// 	if (user.image) await StorageUtil.deleteImage(user.image);
+		// }
 		let record = await Users.findByIdAndUpdate(user_details.user_id, details, { new: true }).select(
+			'-password -is_active -is_deleted',
+		);
+		return sendSuccessResponse(res, res.__('updated'), 200, record);
+	},
+
+	updatePassword: async (req, res) => {
+		const { mobile, password } = req.body;
+		if (!mobile) {
+			return sendErrorResponse(res, res.__('params_missing'));
+		}
+		const user = await Users.findOne({ mobile, is_deleted: false });
+		const details = {
+			password:Helper.getHashedPassword(password)
+		};
+		let record = await Users.findByIdAndUpdate(user.id, details, { new: true }).select(
 			'-password -is_active -is_deleted',
 		);
 		return sendSuccessResponse(res, res.__('updated'), 200, record);
@@ -113,12 +128,11 @@ module.exports = {
 
 	getProfile: async (req, res) => {
 		let data = req.decoded_data;
-		let { stitch_coupon_id, alter_coupon_id } = req.query;
 		let user = await Users.findById(data.user_id, '-password').lean();
 		if (!user) {
 			return sendErrorResponse(res, res.__('res_not_found'), 404);
 		}
-		user.cart = await OrderService.getBagItems(user._id, stitch_coupon_id, alter_coupon_id);
+		// user.cart = await OrderService.getBagItems(user._id);
 		return sendSuccessResponse(res, res.__('success'), 200, user);
 	},
 

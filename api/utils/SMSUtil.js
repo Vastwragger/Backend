@@ -1,13 +1,13 @@
 const Logger = require('./../utils/Logger');
 const Config = require('./../../config');
-const BASE_URL = 'http://sms.txly.in/vb/apikey.php';
 const Axios = require('axios');
 const moment = require('moment');
 
 async function sendSMS(payload) {
 	try {
-		const res = await Axios.get(BASE_URL, { params: payload });
-		if (res.data.status !== 'success') {
+		let BASE_URL = `https://manage.txly.in/vb/apikey.php?apikey=${payload.apikey}&senderid=${payload.senderid}&templateid=${payload.templateid}&number=${payload.number}&message=${payload.message}`;
+		const res = await Axios.get(BASE_URL);
+		if (res.data.status !== 'Success') {
 			res.data.message = 'Failed to send SMS!';
 			Logger.log(res.data);
 		}
@@ -16,6 +16,7 @@ async function sendSMS(payload) {
 	}
 }
 
+
 module.exports = {
 	sendLoginOTP: async (number, otp) => {
 		let payload = {
@@ -23,7 +24,7 @@ module.exports = {
 			senderid: Config.SMS_SENDER_ID,
 			templateid: Config.SMS_OTP_TEMPLATE_ID,
 			number: number,
-			message: `${otp} is your OTP to login to Runtailor. DO NOT share with anyone. Runtailor never calls to ask for OTP. The OTP expires in 10 mins. - Runtailor.`,
+			message: `Welcome%20to%20Vast%20Wragger%0A%0AYour%20OTP%20for%20secure%20login%20is:%20${otp}%0A%0AThanks%20for%20trusting%20us.%20Visit%20www.vastwragger.com%20for%20amazing%20deals%20or%20support.%0A%0ATeam%20Vast%20Wragger`,
 		};
 		await sendSMS(payload);
 	},

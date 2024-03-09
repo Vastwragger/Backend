@@ -41,7 +41,7 @@ module.exports = {
 		return UUID();
 	},
 
-	generateRandomNumber: (length = 6) => {
+	generateRandomNumber: (length = 5) => {
 		return customAlphabet('123456789', length)();
 	},
 

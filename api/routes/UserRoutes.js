@@ -10,6 +10,7 @@ router.post('/', errorHandler(UserController.addUser));
 router.get('/all', errorHandler(UserController.getUsers));
 router.get('/', errorHandler(UserController.getDetailsById));
 router.get('/profile', errorHandler(UserController.getProfile));
+router.patch('/recover-password', errorHandler(UserController.updatePassword));
 router.patch('/profile', errorHandler(UserController.updateProfile));
 router.patch('/status', errorHandler(UserController.updateUserStatus));
 

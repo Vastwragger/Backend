@@ -3,8 +3,7 @@ const Schema = Mongoose.Schema;
 
 const schema = new Schema(
 	{
-		first_name: { type: String },
-		last_name: { type: String },
+		name: { type: String },
 		country_code: { type: String, required: true },
 		mobile: { type: String, required: true },
 		email: { type: String, lowercase: true, trim: true },

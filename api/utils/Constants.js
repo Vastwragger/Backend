@@ -12,6 +12,7 @@ module.exports = {
 	},
 
 	ROLES: {
+		
 		ADMIN: 'Admin',
 		USER: 'User',
 		TAILOR: 'Tailor',
@@ -47,7 +48,7 @@ module.exports = {
 	},
 
 	DEFAULT_CREDS: {
-		MOBILE: '9876543210',
+		MOBILE: '8937014057',
 		OTP: '123456',
 	},
 
